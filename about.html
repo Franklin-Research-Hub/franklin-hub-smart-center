@@ -624,12 +624,12 @@ header.site-header{height:86px!important;display:flex!important;align-items:cent
 .drop-menu{position:static;display:flex;box-shadow:none;border:0;padding:6px 0 0 8px;min-width:0;background:transparent}.drop-menu:before{display:none}}
 /* One compact footer, identical on every page. */
 footer.site-footer{display:block!important;background:#fff!important;color:#161a26!important;border-top:1px solid #e4e6e5!important;padding:16px 7% 12px!important;margin:0!important;text-align:left!important;font-family:'DM Sans',sans-serif!important}
-.sf-row{display:flex;align-items:center;justify-content:space-between;gap:12px 32px;flex-wrap:wrap}
+.sf-row{display:flex;align-items:center;justify-content:center;gap:12px 32px;flex-wrap:wrap}
 .sf-logo{display:inline-flex;margin:0;padding:0}
 .sf-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 13px;font-size:11.5px;font-weight:600;max-width:calc(100% - 270px)}
 .sf-links a{color:#161a26;text-decoration:none}.sf-links a:hover{color:#7856e8}
-.sf-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right;font-size:12px;color:#69707b}.sf-right>span:first-child{color:#161a26;font-weight:600}
-@media(max-width:600px){.sf-right{align-items:flex-start;text-align:left}}
+.sf-right{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;font-size:12px;color:#69707b}.sf-right>span:first-child{color:#161a26;font-weight:600}
+@media(max-width:600px){.sf-right{align-items:center;text-align:center}}
 .sf-bottom{display:flex;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;border-top:1px solid #eeeef1;margin-top:10px;padding-top:10px;font-size:11px;color:#69707b}
 @media(max-width:1240px){footer.site-footer{padding:14px 6% 12px!important}.sf-links{gap:6px 16px;max-width:none;justify-content:flex-start}}
 </style><style id="about-page">
@@ -666,7 +666,7 @@ footer.site-footer{display:block!important;background:#fff!important;color:#161a
 .ab-btn{display:inline-flex;align-items:center;gap:20px;border-radius:6px;padding:15px 20px;font-size:13px;font-weight:800;text-decoration:none}
 .ab-primary{background:#d7fb74;color:#172019}.ab-primary:hover{background:#e6ff9c}
 .ab-ghost{border:1px solid #6c7487;color:#fff}.ab-ghost:hover{border-color:#fff}
-.ab-center{max-width:980px}
+.ab-center{max-width:none}
 .ab-statement{font:700 clamp(22px,2.4vw,34px)/1.4 Manrope,sans-serif;letter-spacing:-.03em;color:#1d2232;margin:0}
 .ab-mv p{margin-top:4px!important;text-align:left;color:#000!important}
 .ab-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
@@ -725,8 +725,8 @@ footer.site-footer{display:block!important;background:#fff!important;color:#161a
 <style id="no-card-decks">
 .ab-list-unused{}
 /* (the first rule here has never applied on the live site; kept as a placeholder so lists keep their approved look) */
-.fh-intro{max-width:920px;font-size:16px;line-height:1.7;color:#000;margin:12px 0 20px}
-.fh-note{font-size:13px;line-height:1.6;color:#575d6b;margin:16px 0 0;max-width:920px}
+.fh-intro{max-width:none;font-size:16px;line-height:1.7;color:#000;margin:12px 0 20px}
+.fh-note{font-size:13px;line-height:1.6;color:#575d6b;margin:16px 0 0;max-width:none}
 .ab-row{display:grid;grid-template-columns:60px minmax(0,.9fr) minmax(0,1.4fr);gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid #e4e6e5}
 .ab-row b{font:800 14px Manrope,sans-serif;letter-spacing:1.5px;color:#7856e8}
 .ab-row h3{font:800 21px/1.25 Manrope,sans-serif;letter-spacing:-.025em;margin:0;color:#161a26}
@@ -800,6 +800,12 @@ footer.site-footer{display:block!important;background:#fff!important;color:#161a
  .hero>.hero-art,.ab-band.has-fig>.band-fig,.bio-band.has-fig>.band-fig{aspect-ratio:1.15/1;margin-top:16px!important}
  .hero .cube-instruction{white-space:nowrap;font-size:8px!important}
 }
+@media(max-width:600px){.sf-dot{display:none}.sf-place{display:block}}
+#about.intro.knowledge-redesign{padding-top:28px!important;padding-bottom:28px!important;min-height:0!important}
+.ab-row .ab-d>.ab-more{display:table;margin:8px 0 0!important}
+.ab-band h1 em,.bio-band h1 em,#architecture-heading span{font-style:normal;display:inline-block;color:#e9dcff;background:linear-gradient(110deg,#ffffff 3%,#e9d8ff 25%,#bba1ff 49%,#8beaff 69%,#f5eaff 94%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 7px rgba(182,136,255,.68)) drop-shadow(0 0 21px rgba(126,77,237,.36));animation:interconnected-cosmic-glow 7s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.ab-band h1 em,.bio-band h1 em,#architecture-heading span{animation:none;background-position:50% 50%;filter:drop-shadow(0 0 8px rgba(177,130,255,.5))}}
+#about.intro .kh-intro h2{font-size:clamp(30px,2.8vw,44px)!important}
 /* no hanging words: balance headings, avoid a lone last word in paragraphs */
 h1,h2,h3{text-wrap:balance}
 @media(min-width:701px) and (max-width:1100px){.ab-row h3{font-size:19px!important}}
@@ -817,14 +823,17 @@ p,li,.ab-d,.pl-disc p{text-wrap:pretty}
 </div></section>
 <section class="ab-sec" id="pillars" aria-labelledby="pillars-title" style="padding-top:30px"><div class="ab-label">OUR THREE PILLARS</div><h2 id="pillars-title">Connect. Mentor. <span>Innovate.</span></h2>
 <div class="ab-list ab-list-pillars"><div class="ab-row"><b>01</b><h3>CONNECT</h3><p>Professional networking, interdisciplinary partnerships, and knowledge&nbsp;exchange.</p></div><div class="ab-row"><b>02</b><h3>MENTOR</h3><p>Youth mentorship, leadership development, and hands-on&nbsp;learning.</p></div><div class="ab-row"><b>03</b><h3>INNOVATE</h3><p>Scientific research, emerging technologies, and community&nbsp;solutions.</p></div></div></section>
-<section class="ab-sec ab-code" id="knowledge-code" aria-labelledby="code-title"><div class="ab-label">THE KNOWLEDGE CODE</div><h2 id="code-title">From curiosity <span>to contribution.</span></h2>
+<section aria-labelledby="purpose-heading" class="intro section knowledge-redesign" id="about"><div class="kh-layout">
+<div class="kh-intro"><span class="kh-eyebrow">THE KNOWLEDGE HELIX™</span><h2 id="purpose-heading">The Knowledge <span>Helix™</span></h2><p class="kh-lead">Five interconnected pathways turn information, inquiry, technology, creativity, and learning into real-world&nbsp;impact.</p></div>
+<div class="kh-visual purpose-visual purpose-helix dna-exact-stage" id="purpose-visual" aria-label="Interactive continuously rotating Knowledge Helix, fitted to its frame; drag to rotate"><canvas id="dna-live-canvas" aria-label="Interactive rotating double helix with five knowledge-code pairings"></canvas><div class="kh-visual-title">THE KNOWLEDGE CODE</div><div class="dna-exact-controls"><button type="button" id="dna-motion-toggle" aria-pressed="false">Pause motion</button></div></div>
+<div class="kh-explain" aria-label="Explore five knowledge pathways"><p class="kh-legend-heading">FIVE PATHWAYS · ONE CONNECTED&nbsp;SYSTEM</p><div class="kh-legend-items"><button class="kh-code" data-code="0" style="--kh:#9c36ee" type="button" aria-label="Data ↔ Insight" aria-pressed="true"><span class="kh-swatch"></span><span class="kh-copy"><b>DT ↔ IN</b><strong>Data ↔ Insight</strong></span></button><button class="kh-code" data-code="1" style="--kh:#178ee9" type="button" aria-label="Research ↔ Discovery" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>RS ↔ DS</b><strong>Research ↔ Discovery</strong></span></button><button class="kh-code" data-code="2" style="--kh:#22a84d" type="button" aria-label="AI ↔ Innovation" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>AI ↔ IV</b><strong>AI ↔ Innovation</strong></span></button><button class="kh-code" data-code="3" style="--kh:#e4a11d" type="button" aria-label="Creativity ↔ Solutions" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>CR ↔ SL</b><strong>Creativity ↔ Solutions</strong></span></button><button class="kh-code" data-code="4" style="--kh:#00aaa8" type="button" aria-label="Education ↔ Impact" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>ED ↔ IM</b><strong>Education ↔ Impact</strong></span></button></div><div class="kh-legend-detail" id="kh-legend-detail" aria-live="polite"><span class="kh-detail-marker"></span><p id="kh-detail-text">Turn information into meaningful understanding and better&nbsp;decisions.</p></div></div></div></section><section class="ab-sec ab-code" id="knowledge-code" aria-labelledby="code-title"><div class="ab-label">HOW WE CONNECT IDEAS</div><h2 id="code-title">From curiosity <span>to contribution.</span></h2>
 <div class="ab-steps">
 <div><b>01</b><h3>Discover</h3><p>Explore ideas, ask questions, and investigate&nbsp;evidence.</p></div>
 <div><b>02</b><h3>Connect</h3><p>Bring together people, disciplines, perspectives, and&nbsp;resources.</p></div>
 <div><b>03</b><h3>Build</h3><p>Translate knowledge into tools, experiences, and&nbsp;solutions.</p></div>
 <div><b>04</b><h3>Share</h3><p>Exchange knowledge and strengthen&nbsp;communities.</p></div>
 </div></section><section class="ab-close"><p class="ab-close-top">Franklin HUB SMART Center™ · Interconnected Knowledge • Infinite&nbsp;Possibilities</p>
-<p class="ab-close-line">Connecting Professionals. <em>Mentoring Generations.</em> Advancing&nbsp;Innovation.</p></section></main><footer class="site-footer"><div class="sf-row"><a href="./" aria-label="Franklin HUB SMART Center home page" class="sf-logo"><img alt="Franklin HUB SMART Center" class="brand-original-logo" src="assets/img/8cf46274f04d.png"/></a><div class="sf-right"><span>© <span class="sf-year" id="year">2026</span> Franklin HUB SMART Center™ · Nashville,&nbsp;Tennessee</span><span>Science • Methods • Analytics • Research • Technology</span></div></div></footer><script id="site-chrome-js">(()=>{const b=document.querySelector('.site-header .menu-btn'),m=document.getElementById('menu');
+<p class="ab-close-line">Connecting Professionals. <em>Mentoring Generations.</em> Advancing&nbsp;Innovation.</p></section></main><footer class="site-footer"><div class="sf-row"><div class="sf-right"><span>© <span class="sf-year" id="year">2026</span> Franklin HUB SMART Center™<span class="sf-dot"> · </span><span class="sf-place">Nashville,&nbsp;Tennessee</span></span><span>Science • Methods • Analytics • Research • Technology</span></div></div></footer><script id="site-chrome-js">(()=>{const b=document.querySelector('.site-header .menu-btn'),m=document.getElementById('menu');
 if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
 m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false')}))}
 try{const q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign','utm_content','ref'].forEach(k=>{if(q.get(k))sessionStorage.setItem('fh_'+k,q.get(k))});
