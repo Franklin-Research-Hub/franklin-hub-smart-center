@@ -15,11 +15,12 @@ Franklin HUB SMART Center™ is an interdisciplinary collaboration, research, in
 | Page | Address | File | What's on it |
 |---|---|---|---|
 | Home | [franklinhubsmartcenter.com](https://franklinhubsmartcenter.com/) | `index.html` | "Knowledge is interconnected." hero with the interactive globe and cube |
-| About | [/about](https://franklinhubsmartcenter.com/about) | `about.html` | Purpose, mission, vision, three pillars, Knowledge Code |
-| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | Nine program pathways with skills and discoveries |
+| About | [/about](https://franklinhubsmartcenter.com/about) | `about.html` | Why we exist: purpose, mission, vision, Three Pillars, From curiosity to contribution |
+| Knowledge Helix | [/knowledge-helix](https://franklinhubsmartcenter.com/knowledge-helix) | `knowledge-helix.html` | How knowledge connects: the Knowledge Core globe, the interactive Knowledge Helix™, the five pathways and their programs, the "What's your Knowledge Code?" quiz, NWGS Grid™ example |
+| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | What you can join: ten programs (including Arts & Design Innovation Studio), each tagged with its Knowledge Helix pathway, with "I'm interested" links |
+| Arts & Design | [/arts-design](https://franklinhubsmartcenter.com/arts-design) | `arts-design.html` | The Living Canvas™ — "Different Faces. Different Perspectives. One Interconnected World.": 19 diverse portraits, each an interactive 3D sculpture of about 4,000 facets (choose a portrait, rotate, zoom, Cubist/Abstract/Modern, palettes, depth, motion, knowledge layers, Reimagine, Export PNG, guided tour), The Canvas Collection curated by Victoria Love Franklin, Founder, studio pathways, five dimensions. Reached from Programs |
 | Research | [/research](https://franklinhubsmartcenter.com/research) | `research.html` | Research directory with initiative keywords; collaboration pathways |
 | Researcher profile | [/victoria-love-franklin](https://franklinhubsmartcenter.com/victoria-love-franklin) | `victoria-love-franklin.html` | Education, honors, research initiatives with keywords, papers |
-| The System | [/system](https://franklinhubsmartcenter.com/system) | `system.html` | Interactive knowledge globe and its layers |
 | Professional Network | [/network](https://franklinhubsmartcenter.com/network) | `network.html` | Find Your Community (7 roles) and proposed community experiences |
 | Youth Mentorship | [/mentorship](https://franklinhubsmartcenter.com/mentorship) | `mentorship.html` | Everything for youth: pathways, programs, workshops, mentors, partners, safeguards, **Founding Youth** (goal: 25) and its form |
 | Events | [/events](https://franklinhubsmartcenter.com/events) | `events.html` | Community experiences, including Toastmasters |
@@ -33,12 +34,15 @@ The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding
 **Not in the menu:**
 - `insights.html`: Insights & Resources topic index, hidden from the menu and from search engines (`noindex`) until the first article is published.
 - `get-involved.html`: retired page; it forwards visitors to `/join`, so old links still work.
+- `system.html`: retired page; The System now lives on the Knowledge Helix page, and old `/system` links forward to `/knowledge-helix`.
 - `404.html`: shown for addresses that don't exist.
 
 ## How the site is built
 
 - Plain HTML pages, no build step. Pages use clean addresses (`/about` instead of `about.html`); GitHub Pages serves the matching `.html` file automatically. All links inside the pages already use clean addresses.
 - Images the pages use live in `assets/img/`, so pages load fast and browsers cache them. Keep that folder with the pages.
+- `assets/canvas/` holds the 3D facet data for each Living Canvas portrait (loaded only when a portrait is chosen).
+- `assets/js/` holds The Living Canvas script (`living-canvas.js`) and the open-source Three.js library (MIT license) it uses for 3D graphics; nothing loads from other websites.
 - `assets/` also holds the original logo, hero artwork, headshot and program illustrations for future edits.
 - Pages are tested on phones, tablets and desktops (360–1920 px wide). Paragraphs and headings avoid single "hanging" words, and banner text never covers the hero figure.
 
@@ -52,13 +56,14 @@ There are three forms, all sending to **franklinhubsmartcenter@gmail.com** throu
 | Founding Professional form | `/founding-professionals` | New Founding Professional interest form |
 | Founding Youth form | `/mentorship#founding-youth` | New Founding Youth interest form |
 
-The first submission from the live site sends an **"Activate Form"** email to that address. Confirm it once, and every submission after that arrives by email. Each email includes the page the form was sent from and any campaign details (see below).
+The first submission from the live site sends an **"Activate Form"** email to that address. Confirm it once, and every submission after that arrives by email. Each person who sends a form also gets an automatic confirmation email thanking them and letting them know a real person will reply. Each email includes the person's interest, the programs they picked, the page the form was sent from, and any campaign details (see below).
 
 ## Recruitment links and tracking
 
 - Add `?utm_source=...&utm_medium=...&utm_campaign=...` to any link you share, for example `https://franklinhubsmartcenter.com/founding-professionals?utm_source=linkedin&utm_campaign=founding`. The form email shows where the person came from.
 - Links can preselect the form's interest: `/join?interest=research-collaboration#interest-form`.
-  Values: `founding-professional`, `professional-networking`, `research-collaboration`, `propose-project`, `project-leadership`, `professional-mentorship`, `youth-mentor`, `founding-youth`, `youth`, `small-business`, `partner`, `events-community`, `other`.
+  Links can also tick programs: `/join?program=ai-data-science,research-academy#interest-form`. Program values: `steam-360`, `coded-culture`, `logic-systems`, `research-academy`, `ai-data-science`, `digital-innovation`, `public-health-environment`, `cybersecurity`, `youth-workforce`, `arts-design`.
+  Interest values: `founding-professional`, `professional-networking`, `research-collaboration`, `propose-project`, `project-leadership`, `professional-mentorship`, `youth-mentor`, `founding-youth`, `youth`, `small-business`, `partner`, `events-community`, `other`.
 
 ## Search (SEO)
 
