@@ -658,6 +658,193 @@ body>main{flex:1 0 auto;display:flex;flex-direction:column}
 body>main>.hero{flex:1 0 auto;min-height:max(520px,calc(100svh - 86px - 130px))!important}
 @media(min-width:1200px){.hero h1{font-size:clamp(64px,6.2vw,112px)!important}.hero-sub{font-size:20px!important;max-width:600px!important}.hero-content{max-width:820px!important}}
 @media(max-width:960px){body>main>.hero{min-height:0!important}}
+</style><style id="about-page">
+.ab-band{background:#000;color:#fff;padding:46px 7% 48px;position:relative;overflow:hidden}
+.ab-band:after{content:"";position:absolute;right:-8%;top:-40%;width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(120,86,232,.45),rgba(120,86,232,0) 65%);pointer-events:none}
+.ab-eyebrow{font-size:11px;font-weight:800;letter-spacing:2.6px;color:#d7fb74;display:flex;align-items:center;gap:11px;margin:0}
+.ab-pulse{width:8px;height:8px;background:#d7fb74;border-radius:50%;box-shadow:0 0 0 5px #d7fb7425}
+.ab-band h1{font-family:Manrope,sans-serif;letter-spacing:-.06em;line-height:1.05;font-size:clamp(44px,6vw,84px);margin:16px 0 14px;position:relative;z-index:1}
+.ab-band h1 em{font-style:normal;color:#d4c5ff}
+.ab-lead{max-width:620px;font-size:18px;line-height:1.7;color:#d1d6e1;margin:0;position:relative;z-index:1}
+.ab-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;position:relative;z-index:1}
+.ab-jump a{font-size:12px;font-weight:700;border:1px solid #ffffff40;border-radius:30px;padding:9px 14px;color:#e8e9f0}
+.ab-jump a:hover{border-color:#d7fb74;color:#d7fb74}
+.ab-sec{padding:68px 7%}.ab-sec.ab-alt{background:#f8f8f6}
+.ab-label{font-size:11px;font-weight:800;letter-spacing:2.6px;color:#7565c4;margin-bottom:14px}
+.ab-sec h2{font-family:Manrope,sans-serif;letter-spacing:-.05em;line-height:1.1;font-size:clamp(32px,4vw,56px);margin:0 0 6px}
+.ab-sec h2 span{color:#898d97}
+.ab-mv{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ab-mv article{border:1px solid #e4e6e5;border-radius:16px;padding:32px;background:#fff;border-top:4px solid #7856e8}
+.ab-mv article+article{border-top-color:#a8d94a}
+.ab-mv h2{font-size:clamp(26px,2.8vw,38px)!important;margin-bottom:14px!important}
+.ab-mv p{font-size:17px;line-height:1.75;color:#3f4554;margin:0}
+.ab-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.ab-values div{background:#fff;border:1px solid #e9e9e4;border-radius:12px;padding:24px}
+.ab-values span{font-size:11px;font-weight:800;letter-spacing:2px;color:#7856e8}
+.ab-values h3{font:800 21px/1.2 Manrope,sans-serif;letter-spacing:-.03em;margin:10px 0 8px}
+.ab-values p{font-size:14px;line-height:1.65;color:#69707b;margin:0}
+.ab-goals{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid #e4e6e5}
+.ab-goals li{display:grid;grid-template-columns:60px minmax(0,.9fr) minmax(0,1.4fr);gap:20px;align-items:baseline;padding:19px 0;border-bottom:1px solid #e4e6e5}
+.ab-goals b{font:800 15px Manrope,sans-serif;color:#7856e8}
+.ab-goals h3{font:800 20px/1.25 Manrope,sans-serif;letter-spacing:-.02em;margin:0}
+.ab-goals p{margin:0;font-size:15px;line-height:1.65;color:#69707b}
+.ab-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:1}
+.ab-btn{display:inline-flex;align-items:center;gap:20px;border-radius:6px;padding:15px 20px;font-size:13px;font-weight:800;text-decoration:none}
+.ab-primary{background:#d7fb74;color:#172019}.ab-primary:hover{background:#e6ff9c}
+.ab-ghost{border:1px solid #6c7487;color:#fff}.ab-ghost:hover{border-color:#fff}
+.ab-center{max-width:none}
+.ab-statement{font:700 clamp(22px,2.4vw,34px)/1.4 Manrope,sans-serif;letter-spacing:-.03em;color:#1d2232;margin:0}
+.ab-mv p{margin-top:4px!important;text-align:left;color:#000!important}
+.ab-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.ab-pillars div{border:1px solid #e4e6e5;border-radius:14px;padding:28px;background:#fff;border-bottom:4px solid #7856e8}
+.ab-pillars div:nth-child(2){border-bottom-color:#a8d94a}.ab-pillars div:nth-child(3){border-bottom-color:#48c9d8}
+.ab-pillars b,.ab-steps b{font:800 13px Manrope,sans-serif;letter-spacing:2px;color:#7856e8}
+.ab-pillars h3{font:800 24px Manrope,sans-serif;letter-spacing:.06em;margin:12px 0 8px}
+.ab-pillars p{margin:0;font-size:15px;line-height:1.65;color:#69707b}
+.ab-code{background:#030306;color:#fff}.ab-code .ab-label{color:#c0adff}.ab-code h2 span{color:#bba6ff}
+.ab-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:30px;border-top:1px solid #343043}
+.ab-steps div{padding:24px 22px 4px 0;margin-right:22px;border-right:1px solid #252333}.ab-steps div:last-child{border-right:0;margin-right:0}
+.ab-steps b{color:#d7fb74}.ab-steps h3{font:800 26px Manrope,sans-serif;letter-spacing:-.03em;margin:10px 0 8px}
+.ab-steps p{margin:0;color:#c9d1e3;font-size:14px;line-height:1.65}
+#founder{border-top:1px solid #eeeef1}
+.ab-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.ab-cards>div{border:1px solid #e4e6e5;border-radius:14px;padding:26px;background:#fff;border-top:4px solid var(--c,#7856e8);transition:transform .2s,box-shadow .2s}
+.ab-cards>div:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(16,16,32,.08)}
+.ab-cards>div>span{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.6px;color:#5d20b7;background:#f2edfc;border-radius:20px;padding:5px 10px;margin-bottom:12px}
+.ab-cards h3{font:800 21px/1.25 Manrope,sans-serif;letter-spacing:-.03em;margin:0 0 8px}
+.ab-cards p{margin:0;font-size:15px;line-height:1.65;color:#69707b}
+.ab-cards>div.ab-feature{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:center;background:linear-gradient(120deg,#f6f1ff,#fff 70%)}
+.ab-feature .ab-icon{grid-row:span 2;align-self:center;width:58px;height:58px;border-radius:14px;background:#5d20b7;color:#fff;display:grid;place-items:center;font-size:26px}
+.ab-cards>div.ab-feature>span{justify-self:start}
+.ab-note{margin:22px 0 0;padding:14px 18px;border-radius:10px;background:#f8f8f6;border:1px dashed #d8d8de;color:#575d6b;font-size:14px}
+.ab-panel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:6%;align-items:start}
+.ab-panel p{margin:0;font-size:18px;line-height:1.8;color:#3f4554}
+.ab-close h2{font:800 clamp(30px,4vw,52px)/1.1 Manrope,sans-serif;letter-spacing:-.05em;margin:0 0 12px;color:#fff}
+.ab-close-text{max-width:640px;margin:0 auto 22px;color:#f0eaff;line-height:1.7;font-size:16px}
+.ab-close .ab-btns{justify-content:center;margin-top:0}
+@media(max-width:1000px){.ab-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.ab-cards,.ab-panel{grid-template-columns:1fr}.ab-panel{gap:12px}}
+.ab-close{background:#7856e8;color:#fff;text-align:center;padding:44px 7%}
+.ab-close-top{margin:0 0 10px;font-size:11px;font-weight:800;letter-spacing:2.2px;color:#d9ff88}
+.ab-close-line{margin:0;font:800 clamp(24px,3vw,40px)/1.2 Manrope,sans-serif;letter-spacing:-.04em}.ab-close-line em{font-style:normal;color:#dcff94}
+@media(max-width:1000px){.ab-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.ab-steps div:nth-child(2){border-right:0;margin-right:0}}
+@media(max-width:760px){.ab-pillars,.ab-steps{grid-template-columns:1fr}.ab-steps div{border-right:0;margin-right:0;border-bottom:1px solid #252333;padding:18px 0}.ab-close{padding:36px 6%}}
+@media(max-width:1000px){.ab-values{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.ab-band{padding:36px 6% 38px}.ab-sec{padding:48px 6%}.ab-mv,.ab-values{grid-template-columns:1fr}
+.ab-goals li{grid-template-columns:40px 1fr;gap:6px 12px}.ab-goals li p{grid-column:2}}
+</style><style id="no-card-decks">
+.ab-list-unused{}
+/* (the first rule here has never applied on the live site; kept as a placeholder so lists keep their approved look) */
+.fh-intro{max-width:none;font-size:16px;line-height:1.7;color:#000;margin:12px 0 20px}
+.fh-note{font-size:13px;line-height:1.6;color:#575d6b;margin:16px 0 0;max-width:none}
+.ab-row{display:grid;grid-template-columns:60px minmax(0,.9fr) minmax(0,1.4fr);gap:20px;align-items:baseline;padding:20px 0;border-bottom:1px solid #e4e6e5}
+.ab-row b{font:800 14px Manrope,sans-serif;letter-spacing:1.5px;color:#7856e8}
+.ab-row h3{font:800 21px/1.25 Manrope,sans-serif;letter-spacing:-.025em;margin:0;color:#161a26}
+.ab-row h3 span{display:inline-block;vertical-align:middle;margin-left:8px;font:800 10px 'DM Sans',sans-serif;letter-spacing:1.4px;color:#5d20b7;background:#f2edfc;border-radius:20px;padding:4px 9px}
+.ab-row p,.ab-row .ab-d{margin:0;font-size:15px;line-height:1.65;color:#69707b}
+.ab-row:hover h3{color:#5d20b7}
+.pp-head{display:block;margin:16px 0 6px;font-size:10px;font-weight:800;letter-spacing:1.6px;color:#5d20b7;text-transform:uppercase}
+.pp-list{margin:0;padding-left:18px}
+.pp-list li{margin:0 0 12px;color:#161a26}
+.pp-list li::marker{color:#7856e8}
+.pp-list strong{display:block;font-size:14.5px;line-height:1.5;font-weight:650;color:#161a26}
+.pp-tools a{margin-left:8px;font-size:12.5px;font-weight:700;color:#5d20b7;white-space:nowrap}.pp-tools a:hover{text-decoration:underline}
+.pp-list em{display:block;font-style:normal;font-size:12.5px;color:#69707b;margin-top:2px}
+.ab-more{display:inline-block;margin-left:10px;font-weight:700;font-size:13px;color:#5d20b7;white-space:nowrap}.ab-more:hover{text-decoration:underline}
+.ab-list-pillars .ab-row h3{letter-spacing:.06em}
+.ab-note{background:none!important;border:0!important;border-left:3px solid #7856e8!important;border-radius:0!important;padding:4px 0 4px 14px!important}
+.ab-mv{gap:56px!important}
+.ab-mv article{border:0!important;border-top:2px solid #7856e8!important;border-radius:0!important;padding:22px 0 0!important;background:none!important}
+.ab-mv article+article{border-top-color:#a8d94a!important}
+/* Projects + research publication cards */
+.portfolio-grid{display:block!important;border-top:1px solid #dfe5ee}
+.portfolio-card,.portfolio-card.featured{border:0!important;border-bottom:1px solid #dfe5ee!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;min-height:0!important;padding:24px 0!important;max-width:none}
+.portfolio-card h3{margin:10px 0 8px!important}.portfolio-card p{max-width:820px}
+/* NWGS research papers: rows with a small image */
+.nwgs-v2-grid{grid-template-columns:1fr!important;gap:0!important;border-top:1px solid #e5e5f0}
+.nwgs-v2-card{flex-direction:row!important;gap:26px;align-items:flex-start;border:0!important;border-bottom:1px solid #e5e5f0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:20px 0}
+.nwgs-v2-card:hover{transform:none!important;box-shadow:none!important}
+.nwgs-v2-visual{flex:0 0 300px;border-radius:10px}
+.nwgs-v2-card-body{padding:0!important}
+.nwgs-v2-summary{border:0!important;border-left:3px solid #6520b4!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:6px 0 6px 22px!important;margin-top:24px}
+.nwgs-v2-summary a{display:inline-block!important;margin-top:6px!important}
+.nwgs-research-hierarchy{background:none!important;border:0!important;border-top:1px solid #e2dafa!important;border-bottom:1px solid #e2dafa!important;border-radius:0!important;padding:14px 0!important}
+.nwgs-hierarchy-item{border:0!important;background:none!important;padding:6px 4px!important}
+.nwgs-hierarchy-item.is-current{box-shadow:none!important;border-bottom:2px solid #7950d2!important;border-radius:0!important}
+.nwgs-project-application,.nwgs-v2-notes{border:0!important;border-left:3px solid #6225bb!important;border-radius:0!important;background:none!important;padding:8px 0 8px 22px!important}
+/* Programs: rows with the interactive object on the left */
+.interactive-grid{grid-template-columns:1fr!important;gap:0!important;border-top:1px solid #e3e4eb}
+.program.interactive-program{display:grid!important;grid-template-columns:300px minmax(0,1fr);column-gap:30px;align-items:start;border:0!important;border-bottom:1px solid #e3e4eb!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;min-height:0!important;padding:20px 0}
+.program.interactive-program[hidden]{display:none!important}
+.program.interactive-program:hover{transform:none!important;box-shadow:none!important}
+.program.interactive-program .program-visual{grid-column:1;grid-row:1/span 3;height:190px;border-radius:12px}
+.program.interactive-program>:not(.program-visual){grid-column:2}
+.program.interactive-program .program-face,.program.interactive-program .program-back{padding:0!important;background:none!important}
+.program.interactive-program .discovery-popover{margin:0 0 10px!important}
+/* The System: globe blends into the background, no frame */
+.architecture-visual{border:0!important;background:transparent!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;
+ height:560px!important;min-height:560px!important;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%)}
+@media(max-width:900px){.architecture-visual{height:420px!important;min-height:420px!important}}
+.architecture-visual:before,.architecture-visual:after{display:none!important}
+.architecture-visual .visual-label{display:none!important}
+/* Get involved: audience list */
+.audience-grid{gap:0 32px!important}
+.audience-grid div{background:none!important;border:0!important;border-bottom:1px solid #e2e2dc!important;border-radius:0!important;padding:18px 2px!important}
+@media(max-width:760px){.ab-row{grid-template-columns:40px 1fr;gap:6px 12px}.ab-row p,.ab-row .ab-d{grid-column:2}.ab-mv{gap:30px!important}
+.nwgs-v2-card{flex-direction:column!important}.nwgs-v2-visual{flex:none;width:100%}
+.program.interactive-program{grid-template-columns:1fr}.program.interactive-program .program-visual{grid-row:auto}.program.interactive-program>:not(.program-visual){grid-column:1}.program.interactive-program .program-visual{margin-bottom:14px}}
+</style><style id="helix-page">
+body:has(#find-your-code) section.ab-band:after,body:has(#find-your-code) section.ab-band:before{display:none!important}
+.pw-row{position:relative}.pw-row:before{content:'';position:absolute;left:-18px;top:22px;bottom:22px;width:3px;border-radius:3px;background:var(--c);box-shadow:0 0 12px var(--c)}
+.pw-row h3 small{display:block;font:800 11px 'DM Sans',sans-serif;letter-spacing:1.4px;color:var(--c);margin-bottom:4px}
+.pw-row .pw-progs{display:block;margin-top:8px;font-size:13.5px;color:#575d6b}
+/* helix on black */
+#about.intro.knowledge-redesign{background:#000!important}
+#about .kh-intro h2{color:#fff!important}#about .kh-intro h2 span{color:#b7a6ff!important}
+#about .kh-eyebrow{color:#c9ff4a!important}#about .kh-lead{color:#d9d6e6!important}
+#about .kh-visual,#about .purpose-visual,#about .dna-exact-stage{background:transparent!important;box-shadow:none!important;border:0!important}
+#about .kh-visual-title{color:#c9b8ff!important;background:transparent!important;box-shadow:none!important;border:0!important;backdrop-filter:none!important}
+#about .kh-intro h2 span{font-style:normal;display:inline-block;background:linear-gradient(110deg,#ffffff 3%,#e9d8ff 25%,#bba1ff 49%,#8beaff 69%,#f5eaff 94%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 7px rgba(182,136,255,.68)) drop-shadow(0 0 21px rgba(126,77,237,.36));animation:interconnected-cosmic-glow 7s ease-in-out infinite}
+#about .dna-exact-controls button{background:rgba(255,255,255,.06)!important;color:#e9e4ff!important;border-color:rgba(255,255,255,.18)!important}
+#about .kh-explain,#about .kh-legend-detail{background:transparent!important;border-color:rgba(255,255,255,.12)!important}
+#about .kh-legend-heading{color:#a9a4bd!important}
+#about .kh-code{background:transparent!important;border-color:transparent!important;color:#fff!important}
+#about .kh-code strong{color:#fff!important}#about .kh-code.is-active{background:rgba(255,255,255,.06)!important;border-color:rgba(255,255,255,.14)!important}
+#about #kh-detail-text{color:#d9d6e6!important}
+/* quiz */
+.kq{display:grid;gap:22px}
+.kq-q{border:0;margin:0;padding:0;min-width:0}.kq-q legend{color:#161a26;font:700 18px Manrope,sans-serif;margin-bottom:10px;padding:0}.kq-q legend b{color:#5d20b7;margin-right:8px}
+.kq-opts{display:flex;flex-wrap:wrap;gap:8px}
+.kq-opts label{cursor:pointer}.kq-opts input{position:absolute;opacity:0;pointer-events:none}
+.kq-opts span{display:inline-block;padding:10px 14px;border:1px solid #d7d9e2;border-radius:999px;color:#161a26;font-size:14px;background:#fff;transition:.2s}
+.kq-opts label:hover span{border-color:#7856e8}.kq-opts input:checked+span{background:#7856e8;border-color:#7856e8;color:#fff;box-shadow:0 0 16px rgba(120,86,232,.6)}
+.kq-opts input:focus-visible+span{outline:2px solid #5d20b7;outline-offset:2px}
+.kq-result{border:1px solid var(--c);border-radius:14px;padding:22px 24px;box-shadow:0 0 30px color-mix(in srgb,var(--c) 30%,transparent);background:#fff}
+.kq-k{font:800 11px 'DM Sans',sans-serif;letter-spacing:1.6px;color:var(--c)}
+.kq-result h3{color:#161a26;margin:6px 0 4px;font-size:26px}.kq-result p{color:#3f4554;margin:0 0 6px}.kq-progs{font-size:14px;color:#575d6b!important}
+.kq-btns{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:12px}
+.kx-tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}.kx-tags a{display:inline-flex;align-items:center;gap:7px;font:700 12px 'DM Sans',sans-serif;color:#161a26;border:1px solid #d7d9e2;border-radius:20px;padding:6px 12px}
+.kx-tags a:before{content:'';width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c)}
+</style><style id="home-story">
+#about.intro.knowledge-redesign{padding-top:28px!important;padding-bottom:44px!important}
+body>main>.hero{min-height:0!important;flex:0 0 auto!important;padding-bottom:28px!important}
+#about .kh-legend{justify-content:flex-start!important;height:auto!important;min-height:0!important;margin-top:0!important}
+html body main #about .kh-dna,html body main #about p.kh-dna{color:#d9d6e6!important}
+#about .kh-layout{align-items:start!important}
+#about .kh-intro{align-self:start!important;padding-top:0!important}
+#about .kh-intro h2{font-size:clamp(34px,3.4vw,56px)!important;line-height:1.06!important;margin:10px 0 14px!important}
+#about .kh-cta{display:inline-flex;gap:10px;align-items:center;margin-top:18px;background:#c9ff4a;color:#0b0818!important;font:800 14px 'DM Sans',sans-serif;border-radius:6px;padding:13px 18px;text-decoration:none}
+#about .kh-legend{align-self:start!important}
+.kh-every{color:#fff;font:800 clamp(26px,2.3vw,36px)/1.1 Manrope,sans-serif;letter-spacing:-.03em;margin:0 0 8px}
+.kh-every i{font-style:normal;white-space:nowrap}
+.kh-every span,#about .kh-intro h2 span{font-style:normal;display:inline-block;background:linear-gradient(110deg,#ffffff 3%,#e9d8ff 25%,#bba1ff 49%,#8beaff 69%,#f5eaff 94%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 7px rgba(182,136,255,.68)) drop-shadow(0 0 21px rgba(126,77,237,.36));animation:interconnected-cosmic-glow 7s ease-in-out infinite;padding:0 .06em .16em 0;margin-bottom:-.16em}
+.kh-dna{color:#d9d6e6;font-size:15px;line-height:1.6;margin:0 0 18px}
+#next.story-map{padding-top:18px!important;padding-bottom:6px!important}
+#in-action{background:#000!important;color:#d9d6e6}
+#in-action h2{color:#fff!important}#in-action h2 span{color:#b7a6ff!important}#in-action .ab-label{color:#c9ff4a!important}
+html body main #in-action.ab-sec.ab-sec p.fh-intro{color:#d9d6e6!important}#in-action .ab-more{color:#c9ff4a!important}
+#in-action .kx-tags a{color:#fff;border-color:rgba(255,255,255,.22)}
+@media(prefers-reduced-motion:reduce){.kh-every span,#about .kh-intro h2 span{animation:none}}
 </style><style id="fit-mobile-tablet">
 @media(max-width:1100px){
  body>main>.hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-height:0!important}
@@ -678,17 +865,24 @@ body>main>.hero{flex:1 0 auto;min-height:max(520px,calc(100svh - 86px - 130px))!
 @media(max-width:600px){.sf-dot{display:none}.sf-place{display:block}}
 #about.intro.knowledge-redesign{padding-top:28px!important;padding-bottom:28px!important;min-height:0!important}
 .ab-row .ab-d>.ab-more{display:table;margin:8px 0 0!important}
-.ab-band h1 em,.bio-band h1 em,#architecture-heading span{font-style:normal;display:inline-block;color:#e9dcff;background:linear-gradient(110deg,#ffffff 3%,#e9d8ff 25%,#bba1ff 49%,#8beaff 69%,#f5eaff 94%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 7px rgba(182,136,255,.68)) drop-shadow(0 0 21px rgba(126,77,237,.36));animation:interconnected-cosmic-glow 7s ease-in-out infinite}
+.ab-band h1 em,.bio-band h1 em,#architecture-heading span{padding:0 .06em .16em 0;margin-bottom:-.16em;font-style:normal;display:inline-block;color:#e9dcff;background:linear-gradient(110deg,#ffffff 3%,#e9d8ff 25%,#bba1ff 49%,#8beaff 69%,#f5eaff 94%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 7px rgba(182,136,255,.68)) drop-shadow(0 0 21px rgba(126,77,237,.36));animation:interconnected-cosmic-glow 7s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.ab-band h1 em,.bio-band h1 em,#architecture-heading span{animation:none;background-position:50% 50%;filter:drop-shadow(0 0 8px rgba(177,130,255,.5))}}
 #about.intro .kh-intro h2{font-size:clamp(30px,2.8vw,44px)!important}
+@media(max-width:1100px){#about .dna-exact-controls{position:static!important;display:flex!important;justify-content:center;margin:12px auto 0!important;transform:none!important}
+ #about .kh-visual-title{position:static!important;transform:none!important;text-align:center;margin:8px auto 0!important;left:auto!important;right:auto!important;bottom:auto!important}}
+@media(max-width:600px){.aw-row{grid-template-columns:1fr!important;grid-template-areas:none!important}.aw-row>*{grid-column:1!important;grid-row:auto!important}.aw-row>b{margin-bottom:2px}}
+@media(max-width:820px){.lc-hint{bottom:46px!important;right:12px}}
 /* no hanging words: balance headings, avoid a lone last word in paragraphs */
 h1,h2,h3{text-wrap:balance}
 @media(min-width:701px) and (max-width:1100px){.ab-row h3{font-size:19px!important}}
 .ab-row h3 .nw{display:inline;margin:0;padding:0;background:none;border-radius:0;font:inherit;letter-spacing:inherit;color:inherit;white-space:nowrap;vertical-align:baseline}
 p,li,.ab-d,.pl-disc p{text-wrap:pretty}
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ResearchOrganization"], "@id": "https://franklinhubsmartcenter.com/#organization", "name": "Franklin HUB SMART Center", "alternateName": "Franklin HUB SMART Center™", "url": "https://franklinhubsmartcenter.com/", "logo": "https://franklinhubsmartcenter.com/assets/logo-franklin-hub-smart-center.png", "email": "franklinhubsmartcenter@gmail.com", "slogan": "Knowledge is interconnected.", "address": {"@type": "PostalAddress", "addressLocality": "Nashville", "addressRegion": "TN", "addressCountry": "US"}, "areaServed": [{"@type": "City", "name": "Nashville"}, {"@type": "State", "name": "Tennessee"}, {"@type": "Country", "name": "United States"}], "description": "An interdisciplinary tech, data science and research hub in Nashville, Tennessee, connecting science, methods, analytics, research and technology through professional networking, research collaboration and mentorship.", "knowsAbout": ["Interdisciplinary research", "Technology", "Artificial intelligence", "Machine learning", "Data science", "Data analytics", "Geospatial analytics", "GIS", "Public health", "Environmental science", "Cybersecurity", "Infrastructure resilience", "Professional networking", "Professional mentorship", "STEM education", "STEAM education", "Research collaboration"]}, {"@type": "WebSite", "@id": "https://franklinhubsmartcenter.com/#website", "url": "https://franklinhubsmartcenter.com/", "name": "Franklin HUB SMART Center", "publisher": {"@id": "https://franklinhubsmartcenter.com/#organization"}}]}</script></head><body>
-<header class="nav site-header" id="top"><a aria-label="Franklin HUB SMART Center home page" class="brand" href="./"><img alt="Franklin HUB SMART Center" class="brand-original-logo" src="assets/img/8cf46274f04d.png"/></a><nav id="menu" aria-label="Main"><a href="./" aria-current="page">Home</a><a href="about">About</a><a href="knowledge-helix">Knowledge Helix</a><a href="programs">Programs</a><a href="research">Research</a><a href="network">Professional Network</a><a href="mentorship">Youth Mentorship</a><a href="events">Events</a><a href="partnerships">Partnerships</a><div class="nav-drop"><a class="nav-cta" href="join" aria-haspopup="true">Join Our HUB <i aria-hidden="true">▾</i></a><div class="drop-menu"><a href="join#interest-form">Interest form <small>Add your voice</small></a><a href="join#ways-to-connect">Ways to connect <small>Find your place</small></a><a href="founding-professionals">Founding Professionals <small>Join from the beginning</small></a><a href="mentorship#founding-youth">Founding Youth <small>Ages 14–24</small></a><a href="professional-mentorship">Professional Mentorship <small>Mentor, lead, share</small></a></div></div></nav><button aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="menu-btn">☰</button></header>
-<main><section class="hero" id="home"><div class="hero-noise"></div><div class="hero-content"><p class="eyebrow"><span class="pulse"></span> INTERCONNECTED KNOWLEDGE • INFINITE&nbsp;POSSIBILITIES</p><h1>Knowledge is<br/><em>interconnected.</em></h1><p class="hero-sub">A collective where science, logic, technology, creativity and community form one living network of discovery. Explore the layers. Find your&nbsp;connection.</p><div class="hero-actions"><a class="button primary enter-site" href="about">Enter site <span aria-hidden="true">→</span></a><a class="button secondary" href="programs">Discover programs <span aria-hidden="true">↗</span></a></div><div class="hero-foot"><span>SCIENCE</span><i></i><span>METHODS</span><i></i><span>ANALYTICS</span><i></i><span>RESEARCH</span><i></i><span>TECHNOLOGY</span></div></div><div aria-label="Interactive dimensional visualization: spatial depth, movement through time, perspective, responsive interaction, and layered information." class="hero-art orbit-stage" data-dimensional="true"><img alt="Glowing tesseract-inspired geometric core surrounded by interconnected purple, lime and teal orbital layers" src="assets/img/485819cc8d72.png"/><canvas aria-hidden="true" class="hero-universe-canvas" id="hero-universe-canvas"></canvas><div aria-label="Interactive rotating geometric cube. Drag to rotate it 360 degrees." class="hero-cube-stage" role="img"><canvas height="520" id="hero-cube-canvas" width="520"></canvas><span class="cube-instruction">DRAG TO ROTATE · 360°</span></div></div></section></main>
+<header class="nav site-header" id="top"><a aria-label="Franklin HUB SMART Center home page" class="brand" href="./"><img alt="Franklin HUB SMART Center" class="brand-original-logo" src="assets/img/f87f355a6e4b.png"/></a><nav id="menu" aria-label="Main"><a href="./" aria-current="page">Home</a><a href="about">About</a><a href="programs">Programs</a><a href="research">Research</a><a href="projects">Projects</a><a href="network">Professional Network</a><a href="mentorship">Youth Mentorship</a><a href="events">Events</a><a href="partnerships">Partnerships</a><div class="nav-drop"><a class="nav-cta" href="join" aria-haspopup="true">Join Our HUB <i aria-hidden="true">▾</i></a><div class="drop-menu"><a href="join#interest-form">Interest form <small>Add your voice</small></a><a href="join#ways-to-connect">Ways to connect <small>Find your place</small></a><a href="founding-professionals">Founding Professionals <small>Join from the beginning</small></a><a href="mentorship#founding-youth">Founding Youth <small>Ages 14–24</small></a><a href="professional-mentorship">Professional Mentorship <small>Mentor, lead, share</small></a></div></div></nav><button aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" class="menu-btn">☰</button></header>
+<main><section class="hero" id="home"><div class="hero-noise"></div><div class="hero-content"><p class="eyebrow"><span class="pulse"></span> INTERCONNECTED KNOWLEDGE • INFINITE&nbsp;POSSIBILITIES</p><h1>Knowledge is<br/><em>interconnected.</em></h1><p class="hero-sub">A collective where science, logic, technology, creativity and community form one living network of discovery. Explore the layers. Find your&nbsp;connection.</p><div class="hero-actions"><a class="button primary enter-site" href="about">Enter site <span aria-hidden="true">→</span></a><a class="button secondary" href="programs">Discover programs <span aria-hidden="true">↗</span></a></div><div class="hero-foot"><span>SCIENCE</span><i></i><span>METHODS</span><i></i><span>ANALYTICS</span><i></i><span>RESEARCH</span><i></i><span>TECHNOLOGY</span></div></div><div aria-label="Interactive dimensional visualization: spatial depth, movement through time, perspective, responsive interaction, and layered information." class="hero-art orbit-stage" data-dimensional="true"><img alt="Glowing tesseract-inspired geometric core surrounded by interconnected purple, lime and teal orbital layers" src="assets/img/485819cc8d72.png"/><canvas aria-hidden="true" class="hero-universe-canvas" id="hero-universe-canvas"></canvas><div aria-label="Interactive rotating geometric cube. Drag to rotate it 360 degrees." class="hero-cube-stage" role="img"><canvas height="520" id="hero-cube-canvas" width="520"></canvas><span class="cube-instruction">DRAG TO ROTATE · 360°</span></div></div></section><div id="helix"></div><section aria-labelledby="purpose-heading" class="intro section knowledge-redesign" id="about"><div class="kh-layout">
+<div class="kh-intro"><span class="kh-eyebrow">THE KNOWLEDGE HELIX™</span><h2 id="purpose-heading">How knowledge <span>becomes impact.</span></h2><p class="kh-lead">Inspired by systems thinking and multidimensional geometry, our model shows how disciplines interact, not as isolated departments, but as parts of one collective&nbsp;intelligence.</p><a class="kh-cta" href="#find-your-code">Find your Knowledge Code <span aria-hidden="true">↓</span></a></div>
+<div class="kh-visual purpose-visual purpose-helix dna-exact-stage" id="purpose-visual" aria-label="Interactive continuously rotating Knowledge Helix, fitted to its frame; drag to rotate"><canvas id="dna-live-canvas" aria-label="Interactive rotating double helix with five knowledge-code pairings"></canvas><div class="kh-visual-title">THE KNOWLEDGE CODE</div><div class="dna-exact-controls"><button type="button" id="dna-motion-toggle" aria-pressed="false">Pause motion</button></div></div>
+<div class="kh-explain" aria-label="Explore five knowledge pathways"><p class="kh-legend-heading">FIVE PATHWAYS · ONE CONNECTED&nbsp;SYSTEM</p><div class="kh-legend-items"><h3 class="kh-every">Every <i>layer <span>connects.</span></i></h3><p class="kh-dna">Like DNA, each pair joins what you bring with what it becomes. Two strands, learning and applying, keep feeding each other, so knowledge never stops&nbsp;moving.</p><button class="kh-code" data-code="0" style="--kh:#9c36ee" type="button" aria-label="Data ↔ Insight" aria-pressed="true"><span class="kh-swatch"></span><span class="kh-copy"><b>DT ↔ IN</b><strong>Data ↔ Insight</strong></span></button><button class="kh-code" data-code="1" style="--kh:#178ee9" type="button" aria-label="Research ↔ Discovery" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>RS ↔ DS</b><strong>Research ↔ Discovery</strong></span></button><button class="kh-code" data-code="2" style="--kh:#22a84d" type="button" aria-label="AI ↔ Innovation" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>AI ↔ IV</b><strong>AI ↔ Innovation</strong></span></button><button class="kh-code" data-code="3" style="--kh:#e4a11d" type="button" aria-label="Creativity ↔ Solutions" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>CR ↔ SL</b><strong>Creativity ↔ Solutions</strong></span></button><button class="kh-code" data-code="4" style="--kh:#00aaa8" type="button" aria-label="Education ↔ Impact" aria-pressed="false"><span class="kh-swatch"></span><span class="kh-copy"><b>ED ↔ IM</b><strong>Education ↔ Impact</strong></span></button></div><div class="kh-legend-detail" id="kh-legend-detail" aria-live="polite"><span class="kh-detail-marker"></span><p id="kh-detail-text">Turn information into meaningful understanding and better&nbsp;decisions.</p></div></div></div></section><section class="ab-sec" id="pathways"><div class="ab-label">THE FIVE PATHWAYS</div><h2>From what you bring <span>to what it becomes.</span></h2><div class="ab-list"><div class="ab-row pw-row" id="data-insight" style="--c:#b45aff"><b>01</b><h3><small>DT ↔ IN</small>Data ↔ Insight</h3><div class="ab-d">Turn information into meaningful understanding and better decisions. Collect, analyze, and visualize data so evidence leads to clearer understanding.<span class="pw-progs">Programs: <a href="ai-data-science-lab">AI &amp; Data Science Lab</a>, <a href="smart-research-academy">SMART Research Academy</a></span><a class="ab-more" href="join?program=ai-data-science,research-academy#interest-form">I’m interested →</a></div></div><div class="ab-row pw-row" id="research-discovery" style="--c:#2aa6ff"><b>02</b><h3><small>RS ↔ DS</small>Research ↔ Discovery</h3><div class="ab-d">Ask questions, investigate evidence, and generate new knowledge. Scientific methods and field evidence in public health, the environment, and beyond.<span class="pw-progs">Programs: <a href="smart-research-academy">SMART Research Academy</a>, <a href="public-health-environment">Public Health &amp; Environment</a></span><a class="ab-more" href="join?program=research-academy,public-health-environment#interest-form">I’m interested →</a></div></div><div class="ab-row pw-row" id="ai-innovation" style="--c:#46c96a"><b>03</b><h3><small>AI ↔ IV</small>AI ↔ Innovation</h3><div class="ab-d">Apply artificial intelligence to develop useful tools and applications. Responsible AI, software, prototypes, and secure systems that people can use.<span class="pw-progs">Programs: <a href="ai-data-science-lab">AI &amp; Data Science Lab</a>, <a href="digital-innovation-studio">Digital Innovation Studio</a>, <a href="cybersecurity-academy">Cybersecurity Academy</a></span><a class="ab-more" href="join?program=ai-data-science,digital-innovation,cybersecurity#interest-form">I’m interested →</a></div></div><div class="ab-row pw-row" id="creativity-solutions" style="--c:#f3b742"><b>04</b><h3><small>CR ↔ SL</small>Creativity ↔ Solutions</h3><div class="ab-d">Use creative thinking to design practical and scalable solutions. Design, code, storytelling, and systems thinking that turn ideas into answers.<span class="pw-progs">Programs: <a href="arts-design">Arts &amp; Design Innovation Studio</a>, <a href="steam-360">STEAM 360™</a>, <a href="coded-culture">Coded Culture™</a>, <a href="logic-systems-thinking">Logic &amp; Systems Thinking</a></span><a class="ab-more" href="join?program=arts-design,steam-360,coded-culture,logic-systems#interest-form">I’m interested →</a></div></div><div class="ab-row pw-row" id="education-impact" style="--c:#1fd0c8"><b>05</b><h3><small>ED ↔ IM</small>Education ↔ Impact</h3><div class="ab-d">Share knowledge, build skills, and create lasting community impact. Mentorship, skills, and career pathways that carry knowledge into communities and the next generation.<span class="pw-progs">Programs: <a href="youth-workforce-pathways">Youth &amp; Workforce Pathways</a>, <a href="professional-collaboration-mentorship">Professional Collaboration &amp; Mentorship</a>, <a href="arts-design">Arts &amp; Design Innovation Studio</a>, <a href="steam-360">STEAM 360™</a></span><a class="ab-more" href="mentorship?program=youth-workforce,professional-collab,arts-design,steam-360#youth-form">I’m interested →</a></div></div></div></section><section class="ab-sec story-map" id="next"><p class="fh-intro" style="margin:0">Why we&nbsp;exist: <a class="ab-more" style="margin-left:0" href="about">About →</a>&ensp; What you can&nbsp;join: <a class="ab-more" style="margin-left:0" href="programs">Programs →</a>&ensp; Your&nbsp;voice: <a class="ab-more" style="margin-left:0" href="join#interest-form">Join Our HUB →</a></p></section><section class="ab-sec" id="find-your-code"><div class="ab-label">WHAT’S YOUR KNOWLEDGE CODE?</div><h2>Find your <span>pathway.</span></h2><p class="fh-intro">Answer three quick questions. Your pathway lights up on the helix, with programs to&nbsp;match.</p><form class="kq" id="kq" onsubmit="return false"><fieldset class="kq-q"><legend><b>1</b> What do you enjoy most?</legend><div class="kq-opts"><label><input type="radio" name="q0" value="0"/><span>Finding patterns in numbers</span></label><label><input type="radio" name="q0" value="1"/><span>Asking questions and investigating</span></label><label><input type="radio" name="q0" value="2"/><span>Building with technology</span></label><label><input type="radio" name="q0" value="3"/><span>Designing and creating</span></label><label><input type="radio" name="q0" value="4"/><span>Teaching, guiding, or helping others</span></label></div></fieldset><fieldset class="kq-q"><legend><b>2</b> How do you like to work?</legend><div class="kq-opts"><label><input type="radio" name="q1" value="0"/><span>Analyzing information</span></label><label><input type="radio" name="q1" value="1"/><span>Running studies and experiments</span></label><label><input type="radio" name="q1" value="2"/><span>Prototyping and testing tools</span></label><label><input type="radio" name="q1" value="3"/><span>Brainstorming and making</span></label><label><input type="radio" name="q1" value="4"/><span>Working with people and communities</span></label></div></fieldset><fieldset class="kq-q"><legend><b>3</b> What would you most like to change?</legend><div class="kq-opts"><label><input type="radio" name="q2" value="0"/><span>Decisions made without evidence</span></label><label><input type="radio" name="q2" value="1"/><span>Questions nobody has answered yet</span></label><label><input type="radio" name="q2" value="2"/><span>Problems technology could solve</span></label><label><input type="radio" name="q2" value="3"/><span>Challenges that need a fresh idea</span></label><label><input type="radio" name="q2" value="4"/><span>Opportunities people never get</span></label></div></fieldset><div class="kq-result" id="kq-result" hidden><span class="kq-k">YOUR KNOWLEDGE CODE</span><h3 id="kq-name"></h3><p id="kq-line"></p><p class="kq-progs">Programs for you: <span id="kq-progs"></span></p><div class="kq-btns"><a class="ab-btn ab-primary" id="kq-go" href="join">I’m interested <span aria-hidden="true">↗</span></a><a class="ab-more" id="kq-see" href="#about">See it on the helix →</a></div></div></form></section><script>(()=>{const P=[{"name": "Data ↔ Insight", "code": "DT ↔ IN", "line": "Turn information into meaningful understanding and better decisions.", "color": "#b45aff", "idx": 0, "href": "join?program=ai-data-science,research-academy#interest-form", "progs": "AI & Data Science Lab, SMART Research Academy"}, {"name": "Research ↔ Discovery", "code": "RS ↔ DS", "line": "Ask questions, investigate evidence, and generate new knowledge.", "color": "#2aa6ff", "idx": 1, "href": "join?program=research-academy,public-health-environment#interest-form", "progs": "SMART Research Academy, Public Health & Environment"}, {"name": "AI ↔ Innovation", "code": "AI ↔ IV", "line": "Apply artificial intelligence to develop useful tools and applications.", "color": "#46c96a", "idx": 2, "href": "join?program=ai-data-science,digital-innovation,cybersecurity#interest-form", "progs": "AI & Data Science Lab, Digital Innovation Studio, Cybersecurity Academy"}, {"name": "Creativity ↔ Solutions", "code": "CR ↔ SL", "line": "Use creative thinking to design practical and scalable solutions.", "color": "#f3b742", "idx": 3, "href": "join?program=arts-design,steam-360,coded-culture,logic-systems#interest-form", "progs": "Arts & Design Innovation Studio, STEAM 360™, Coded Culture™, Logic & Systems Thinking"}, {"name": "Education ↔ Impact", "code": "ED ↔ IM", "line": "Share knowledge, build skills, and create lasting community impact.", "color": "#1fd0c8", "idx": 4, "href": "mentorship?program=youth-workforce,professional-collab,arts-design,steam-360#youth-form", "progs": "Youth & Workforce Pathways, Professional Collaboration & Mentorship, Arts & Design Innovation Studio, STEAM 360™"}];const f=document.getElementById("kq");if(!f)return;const box=document.getElementById("kq-result");function score(){const picks=[0,1,2].map(i=>{const r=f.querySelector(`input[name=q${i}]:checked`);return r?+r.value:null});if(picks.includes(null))return;const t=[0,0,0,0,0];picks.forEach((v,i)=>t[v]+=i===2?1.5:1);let best=0;t.forEach((v,i)=>{if(v>t[best])best=i});const p=P[best];box.hidden=false;box.style.setProperty("--c",p.color);document.getElementById("kq-name").textContent=p.code+"  ·  "+p.name;document.getElementById("kq-line").textContent=p.line;document.getElementById("kq-progs").textContent=p.progs;document.getElementById("kq-go").href=p.href;const b=document.querySelectorAll(".kh-code")[p.idx];if(b)b.click();}f.addEventListener("change",score);document.getElementById("kq-see").addEventListener("click",()=>{})})();</script></main>
 <footer class="site-footer"><div class="sf-row"><div class="sf-right"><span>© <span class="sf-year" id="year">2026</span> Franklin HUB SMART Center™<span class="sf-dot"> · </span><span class="sf-place">Nashville,&nbsp;Tennessee</span></span><span>Science • Methods • Analytics • Research • Technology</span></div></div></footer><script id="site-chrome-js">(()=>{const b=document.querySelector('.site-header .menu-btn'),m=document.getElementById('menu');
 if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});
 m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false')}))}

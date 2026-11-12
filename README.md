@@ -14,11 +14,12 @@ Franklin HUB SMART Center™ is an interdisciplinary collaboration, research, in
 
 | Page | Address | File | What's on it |
 |---|---|---|---|
-| Home | [franklinhubsmartcenter.com](https://franklinhubsmartcenter.com/) | `index.html` | "Knowledge is interconnected." hero with the interactive globe and cube |
+| Home | [franklinhubsmartcenter.com](https://franklinhubsmartcenter.com/) | `index.html` | The story map: "Knowledge is interconnected." hero, then the Knowledge Helix™ ("How knowledge becomes impact" beside the interactive helix and "Every layer connects"), the five pathways, links to About / Programs / Join, and the "What's your Knowledge Code?" quiz |
 | About | [/about](https://franklinhubsmartcenter.com/about) | `about.html` | Why we exist: purpose, mission, vision, Three Pillars, From curiosity to contribution |
-| Knowledge Helix | [/knowledge-helix](https://franklinhubsmartcenter.com/knowledge-helix) | `knowledge-helix.html` | How knowledge connects: the Knowledge Core globe, the interactive Knowledge Helix™, the five pathways and their programs, the "What's your Knowledge Code?" quiz, NWGS Grid™ example |
-| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | What you can join: ten programs (including Arts & Design Innovation Studio), each tagged with its Knowledge Helix pathway, with "I'm interested" links |
+| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | Our SMART Program Pathways: 11 cinematic program cards (number, audience, four skills, Explore Program, I'm Interested) with All / Youth / Professionals filters |
+| Program pages | e.g. [/steam-360](https://franklinhubsmartcenter.com/steam-360) | `steam-360.html`, `coded-culture.html`, `logic-systems-thinking.html`, `smart-research-academy.html`, `ai-data-science-lab.html`, `digital-innovation-studio.html`, `public-health-environment.html`, `cybersecurity-academy.html`, `youth-workforce-pathways.html`, `professional-collaboration-mentorship.html` | One page per program: overview, skills, ways to take part (youth, professionals, mentors, collaborators), project ideas, and registration links. Arts & Design uses `arts-design.html` |
 | Arts & Design | [/arts-design](https://franklinhubsmartcenter.com/arts-design) | `arts-design.html` | The Living Canvas™ — "Different Faces. Different Perspectives. One Interconnected World.": 19 diverse portraits, each an interactive 3D sculpture of about 4,000 facets (choose a portrait, rotate, zoom, Cubist/Abstract/Modern, palettes, depth, motion, knowledge layers, Reimagine, Export PNG, guided tour), The Canvas Collection curated by Victoria Love Franklin, Founder, studio pathways, five dimensions. Reached from Programs |
+| Projects | [/projects](https://franklinhubsmartcenter.com/projects) | `projects.html` | Research in action: NWGS Grid™, the Helix in Action (how the project uses four Knowledge Helix pathways), its five ICEPTP 2027 papers, and ways to propose, join, or lead a project |
 | Research | [/research](https://franklinhubsmartcenter.com/research) | `research.html` | Research directory with initiative keywords; collaboration pathways |
 | Researcher profile | [/victoria-love-franklin](https://franklinhubsmartcenter.com/victoria-love-franklin) | `victoria-love-franklin.html` | Education, honors, research initiatives with keywords, papers |
 | Professional Network | [/network](https://franklinhubsmartcenter.com/network) | `network.html` | Find Your Community (7 roles) and proposed community experiences |
@@ -31,11 +32,7 @@ Franklin HUB SMART Center™ is an interdisciplinary collaboration, research, in
 
 The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding Professionals, Founding Youth, Professional Mentorship.
 
-**Not in the menu:**
-- `insights.html`: Insights & Resources topic index, hidden from the menu and from search engines (`noindex`) until the first article is published.
-- `get-involved.html`: retired page; it forwards visitors to `/join`, so old links still work.
-- `system.html`: retired page; The System now lives on the Knowledge Helix page, and old `/system` links forward to `/knowledge-helix`.
-- `404.html`: shown for addresses that don't exist.
+**Retired pages:** Get Involved, The System, Insights & Resources, and the separate Knowledge Helix page are no longer part of the site and have been removed. Their old addresses forward automatically (through `404.html`): /get-involved → /join, /system and /knowledge-helix → the Knowledge Helix on Home, /insights → Home. `404.html` also shows a friendly page for any other address that doesn't exist.
 
 ## How the site is built
 
@@ -62,7 +59,7 @@ The first submission from the live site sends an **"Activate Form"** email to th
 
 - Add `?utm_source=...&utm_medium=...&utm_campaign=...` to any link you share, for example `https://franklinhubsmartcenter.com/founding-professionals?utm_source=linkedin&utm_campaign=founding`. The form email shows where the person came from.
 - Links can preselect the form's interest: `/join?interest=research-collaboration#interest-form`.
-  Links can also tick programs: `/join?program=ai-data-science,research-academy#interest-form`. Program values: `steam-360`, `coded-culture`, `logic-systems`, `research-academy`, `ai-data-science`, `digital-innovation`, `public-health-environment`, `cybersecurity`, `youth-workforce`, `arts-design`.
+  Links can also tick programs: `/join?program=ai-data-science,research-academy#interest-form`. Program values: `steam-360`, `coded-culture`, `logic-systems`, `research-academy`, `ai-data-science`, `digital-innovation`, `public-health-environment`, `cybersecurity`, `youth-workforce`, `arts-design`, `professional-collab`.
   Interest values: `founding-professional`, `professional-networking`, `research-collaboration`, `propose-project`, `project-leadership`, `professional-mentorship`, `youth-mentor`, `founding-youth`, `youth`, `small-business`, `partner`, `events-community`, `other`.
 
 ## Search (SEO)
@@ -83,21 +80,20 @@ The site is served from **franklinhubsmartcenter.com** (registered with GoDaddy)
 
 ## Updating the site
 
-Download the newest website ZIP to your Downloads folder, then in PowerShell:
+Download the newest website ZIP to your Downloads folder, then in PowerShell (from your repo folder):
 
 ```powershell
-cd $HOME\franklin-hub-smart-center
 git pull
 $zip = Get-ChildItem "$HOME\Downloads\franklin-hub-smart-center*.zip" | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 Remove-Item "$env:TEMP\fhsc" -Recurse -Force -ErrorAction SilentlyContinue
 Expand-Archive $zip.FullName -DestinationPath "$env:TEMP\fhsc" -Force
-Copy-Item "$env:TEMP\fhsc\franklin-hub-smart-center\*" . -Recurse -Force
+robocopy "$env:TEMP\fhsc\franklin-hub-smart-center" . /MIR /XD .git
 git add -A
 git commit -m "Update website"
 git push
 ```
 
-GitHub Pages republishes the site within a minute or two.
+`robocopy /MIR` makes the repo match the ZIP exactly, so pages that were removed from the site are removed from GitHub too. GitHub Pages republishes within a minute or two.
 
 ## Contact
 
