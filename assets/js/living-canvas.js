@@ -308,13 +308,13 @@ function init() {
     () => { S.perspective = 'modern'; press('perspective', 'modern'); select({ disc: 'environment', name: 'Environment & Health' }); },
   ];
   function stopTour() { if (!tour) return; clearInterval(tour); tour = null; tourBtn.setAttribute('aria-pressed', 'false'); tourBtn.querySelector('span').textContent = 'Watch the Experience'; }
-  tourBtn.addEventListener('click', () => {
+  if (tourBtn) tourBtn.addEventListener('click', () => {
     if (tour) return stopTour();
     stage.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
     let i = 0; STEPS[0](); paint(); tourBtn.setAttribute('aria-pressed', 'true'); tourBtn.querySelector('span').textContent = 'Stop the tour';
     tour = setInterval(() => { i++; if (i >= STEPS.length) return stopTour(); STEPS[i](); paint(); spin.y = Math.sin(i) * 0.5; }, 3400);
   });
-  document.getElementById('lc-create').addEventListener('click', e => { e.preventDefault(); stage.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' }); canvas.focus({ preventScroll: true }); });
+  document.getElementById('lc-create')?.addEventListener('click', e => { e.preventDefault(); stage.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' }); canvas.focus({ preventScroll: true }); });
 
   canvas.addEventListener('keydown', e => {
     const s = 0.18;
