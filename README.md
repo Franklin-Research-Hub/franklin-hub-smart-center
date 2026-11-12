@@ -14,25 +14,28 @@ Franklin HUB SMART Center™ is an interdisciplinary collaboration, research, in
 
 | Page | Address | File | What's on it |
 |---|---|---|---|
-| Home | [franklinhubsmartcenter.com](https://franklinhubsmartcenter.com/) | `index.html` | The story map: "Knowledge is interconnected." hero, then the Knowledge Helix™ ("How knowledge becomes impact" beside the interactive helix and "Every layer connects"), the five pathways, links to About / Programs / Join, and the "What's your Knowledge Code?" quiz |
-| About | [/about](https://franklinhubsmartcenter.com/about) | `about.html` | Why we exist: purpose, mission, vision, Three Pillars, From curiosity to contribution |
-| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | Our SMART Program Pathways: 11 cinematic program cards (number, audience, four skills, Explore Program, I'm Interested) with All / Youth / Professionals filters |
-| Program pages | e.g. [/steam-360](https://franklinhubsmartcenter.com/steam-360) | `steam-360.html`, `coded-culture.html`, `logic-systems-thinking.html`, `smart-research-academy.html`, `ai-data-science-lab.html`, `digital-innovation-studio.html`, `public-health-environment.html`, `cybersecurity-academy.html`, `youth-workforce-pathways.html`, `professional-collaboration-mentorship.html` | One page per program: overview, skills, ways to take part (youth, professionals, mentors, collaborators), project ideas, and registration links. Arts & Design uses `arts-design.html` |
-| Arts & Design | [/arts-design](https://franklinhubsmartcenter.com/arts-design) | `arts-design.html` | The Living Canvas™ — "Different Faces. Different Perspectives. One Interconnected World.": 19 diverse portraits, each an interactive 3D sculpture of about 4,000 facets (choose a portrait, rotate, zoom, Cubist/Abstract/Modern, palettes, depth, motion, knowledge layers, Reimagine, Export PNG, guided tour), The Canvas Collection curated by Victoria Love Franklin, Founder, studio pathways, five dimensions. Reached from Programs |
+| Home | [franklinhubsmartcenter.com](https://franklinhubsmartcenter.com/) | `index.html` | The story map: "Knowledge is interconnected." hero, then the Knowledge Helix™ ("How knowledge becomes impact" beside the interactive helix; "Every layer connects" with the five pathways, where choosing a layer opens its description, programs and "I'm interested" link), and the "What's your Knowledge Code?" quiz on black |
+| About | [/about](https://franklinhubsmartcenter.com/about) | `about.html` | Why we exist: purpose, mission, vision, Three Pillars, From curiosity to contribution, and the four outcomes (Education, Careers, Business, Sustainability) |
+| Programs | [/programs](https://franklinhubsmartcenter.com/programs) | `programs.html` | 11 program cards in three families (Science, Data & Technology; Health & Living Systems; Arts, Culture & Music) with family filters and a "Join as" strip (youth, professional or mentor, partner, career and college seeker) |
+| Program pages | e.g. [/steam-360](https://franklinhubsmartcenter.com/steam-360) | `ai-data-science-lab.html`, `digital-innovation-studio.html`, `cybersecurity-academy.html`, `logic-systems-thinking.html`, `smart-research-academy.html`, `public-health-environment.html`, `living-systems-collaborative.html`, `coded-culture.html`, `steam-360.html`, `dear-music.html` | One page per program, all built on the same five parts: People (youth, professionals, mentors), Learn by Doing experiences, Skills, Partners we seek, Projects, and Resources and outcomes. Arts & Design uses `arts-design.html` |
+| Arts & Design | [/arts-design](https://franklinhubsmartcenter.com/arts-design) | `arts-design.html` | The Arts & Design Innovation Studio program first: overview, skills, two tracks (Youth Creative Academy, Professional Creative Collaborative), Learn by Doing with museums, galleries, independent artists and public art, the Small Business Brand Lab, studio activities, and ways to take part. Below it, The Living Canvas™ interactive space ("Different Faces. Different Perspectives. One Interconnected World."): 19 diverse 3D portraits of about 4,000–4,900 facets each, customize panel, guided tour, Export PNG, The STEM Studio (9 tools: Portraits, Rotate & Angle, Mirror, Color Mixer, Light, Pattern Engine, Depth, Measure, Data Lens; 9 challenges at Explorer, Builder and Innovator levels, progress saved in the visitor's browser), and The Canvas Collection curated by Victoria Love Franklin, Founder. Credit: built and designed by Victoria Love Franklin, Founder |
 | Projects | [/projects](https://franklinhubsmartcenter.com/projects) | `projects.html` | Research in action: NWGS Grid™, the Helix in Action (how the project uses four Knowledge Helix pathways), its five ICEPTP 2027 papers, and ways to propose, join, or lead a project |
 | Research | [/research](https://franklinhubsmartcenter.com/research) | `research.html` | Research directory with initiative keywords; collaboration pathways |
 | Researcher profile | [/victoria-love-franklin](https://franklinhubsmartcenter.com/victoria-love-franklin) | `victoria-love-franklin.html` | Education, honors, research initiatives with keywords, papers |
-| Professional Network | [/network](https://franklinhubsmartcenter.com/network) | `network.html` | Find Your Community (7 roles) and proposed community experiences |
+| Professional Network | [/network](https://franklinhubsmartcenter.com/network) | `network.html` | The people network for every program: Find Your Community (8 roles, including Project Teams) and four community experiences that open as the Center launches |
 | Youth Mentorship | [/mentorship](https://franklinhubsmartcenter.com/mentorship) | `mentorship.html` | Everything for youth: pathways, programs, workshops, mentors, partners, safeguards, **Founding Youth** (goal: 25) and its form |
 | Events | [/events](https://franklinhubsmartcenter.com/events) | `events.html` | Community experiences, including Toastmasters |
-| Partnerships | [/partnerships](https://franklinhubsmartcenter.com/partnerships) | `partnerships.html` | Partnership opportunities and partner registry |
+| Partnerships | [/partnerships](https://franklinhubsmartcenter.com/partnerships) | `partnerships.html` | The Experiential Partner Network: what partners give and get, four tiers (Host, Expert, Sponsor, Founding; goal: 10 Founding Partners), nine types of partners we seek with the outcome each serves, ways to start a partnership, and the partner registry |
 | Join Our HUB | [/join](https://franklinhubsmartcenter.com/join) | `join.html` | Ways to connect and the interest form |
 | Founding Professionals | [/founding-professionals](https://franklinhubsmartcenter.com/founding-professionals) | `founding-professionals.html` | Goal of 100 founding professionals, then a launch information event; interest form |
 | Professional Mentorship | [/professional-mentorship](https://franklinhubsmartcenter.com/professional-mentorship) | `professional-mentorship.html` | Mentorship between adult professionals; leading projects |
+| Career & College Center | [/careers](https://franklinhubsmartcenter.com/careers) | `careers.html` | K–12 mentoring, college and certificate enrollment support (including HBCUs), career readiness with workforce agencies and employers, hiring and internships, partners we seek, and results we track |
 
-The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding Professionals, Founding Youth, Professional Mentorship.
+The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding Professionals, Founding Youth, Professional Mentorship, Career & College Center.
 
-**Retired pages:** Get Involved, The System, Insights & Resources, and the separate Knowledge Helix page are no longer part of the site and have been removed. Their old addresses forward automatically (through `404.html`): /get-involved → /join, /system and /knowledge-helix → the Knowledge Helix on Home, /insights → Home. `404.html` also shows a friendly page for any other address that doesn't exist.
+**How it all aligns:** the Knowledge Helix™ feeds three program families; every program has the same five parts; the people network (Youth Mentorship and Professional Network) and the partner network (Partnerships) serve every program; and the interest form is the one front door. Founding goals: 100 Founding Professionals, 25 Founding Youth, 10 Founding Partners.
+
+**Retired pages:** Get Involved, The System, Insights & Resources, and the separate Knowledge Helix page are no longer part of the site and have been removed. Their old addresses forward automatically (through `404.html`): /get-involved → /join, /system and /knowledge-helix → the Knowledge Helix on Home, /insights → Home. `404.html` also shows a friendly page for any other address that doesn't exist. Youth & Workforce Pathways and Professional Collaboration & Mentorship became part of the people network: /youth-workforce-pathways → /mentorship and /professional-collaboration-mentorship → /network.
 
 ## How the site is built
 
@@ -40,8 +43,9 @@ The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding
 - Images the pages use live in `assets/img/`, so pages load fast and browsers cache them. Keep that folder with the pages.
 - `assets/canvas/` holds the 3D facet data for each Living Canvas portrait (loaded only when a portrait is chosen).
 - `assets/js/` holds The Living Canvas script (`living-canvas.js`) and the open-source Three.js library (MIT license) it uses for 3D graphics; nothing loads from other websites.
-- `assets/` also holds the original logo, hero artwork, headshot and program illustrations for future edits.
-- Pages are tested on phones, tablets and desktops (360–1920 px wide). Paragraphs and headings avoid single "hanging" words, and banner text never covers the hero figure.
+- `assets/logo-franklin-hub-smart-center.png` is the header logo (also used in Google's organization data); `assets/hero-globe-artwork.png` is kept for future edits.
+- Program card artwork, portraits, and all other page images are in `assets/img/`.
+- Pages are tested on phones, tablets and desktops (360–1920 px wide). Paragraphs and headings avoid single "hanging" words, no text overlaps other text, and banner text never covers a figure.
 
 ## Interest forms
 
@@ -59,8 +63,8 @@ The first submission from the live site sends an **"Activate Form"** email to th
 
 - Add `?utm_source=...&utm_medium=...&utm_campaign=...` to any link you share, for example `https://franklinhubsmartcenter.com/founding-professionals?utm_source=linkedin&utm_campaign=founding`. The form email shows where the person came from.
 - Links can preselect the form's interest: `/join?interest=research-collaboration#interest-form`.
-  Links can also tick programs: `/join?program=ai-data-science,research-academy#interest-form`. Program values: `steam-360`, `coded-culture`, `logic-systems`, `research-academy`, `ai-data-science`, `digital-innovation`, `public-health-environment`, `cybersecurity`, `youth-workforce`, `arts-design`, `professional-collab`.
-  Interest values: `founding-professional`, `professional-networking`, `research-collaboration`, `propose-project`, `project-leadership`, `professional-mentorship`, `youth-mentor`, `founding-youth`, `youth`, `small-business`, `partner`, `events-community`, `other`.
+  Links can also tick programs: `/join?program=ai-data-science,research-academy#interest-form`. Program values: `ai-data-science`, `digital-innovation`, `cybersecurity`, `logic-systems`, `research-academy`, `public-health-environment`, `living-systems`, `arts-design`, `coded-culture`, `steam-360`, `dear-music`.
+  Interest values (grouped in the form): `founding-professional`, `professional-networking`, `professional-mentorship`, `youth-mentor`, `founding-youth`, `youth`, `career-college`, `artist`, `research-collaboration`, `propose-project`, `project-leadership`, `partner`, `host-experiences`, `school-partner`, `college-partner`, `employer`, `funder`, `agency`, `small-business`, `brand-lab`, `events-community`, `other`.
 
 ## Search (SEO)
 
@@ -71,7 +75,7 @@ The first submission from the live site sends an **"Activate Form"** email to th
 ## Icon and social media preview
 
 - Browser tab icon: `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`. Phone home screen: `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `site.webmanifest`.
-- Link preview image for LinkedIn, Facebook, X, iMessage and Slack: `og-image.jpg` (1200×630).
+- Link preview image for LinkedIn, Facebook, X, iMessage and Slack: `og-image.jpg` (1200×630). Each program page and the Career & College Center has its own preview card (program artwork, name and tagline) in `assets/og/`.
 - After changing the preview, refresh LinkedIn's copy at https://www.linkedin.com/post-inspector/ and Facebook's at https://developers.facebook.com/tools/debug/.
 
 ## Custom domain
