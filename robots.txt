@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /future-apps/
 
 Sitemap: https://franklinhubsmartcenter.com/sitemap.xml

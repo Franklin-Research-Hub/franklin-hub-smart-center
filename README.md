@@ -41,14 +41,13 @@ The **Join Our HUB ▾** menu links to: Interest form, Ways to connect, Founding
 
 ## Future build-out app (in the repo, not on the website)
 
-`future-apps/living-canvas/` holds **The Living Canvas™** (`index.html`) and **The STEM Studio** (`stem-studio.html`), built and designed by Victoria Love Franklin, Founder. They are not linked from the website, are left out of the sitemap, ask search engines not to index them, and `robots.txt` disallows `/future-apps/`. Old /stem-studio and /living-canvas addresses forward to /arts-design. See `future-apps/living-canvas/README.md` to launch them later.
 
 ## How the site is built
 
 - Plain HTML pages, no build step. Pages use clean addresses (`/about` instead of `about.html`); GitHub Pages serves the matching `.html` file automatically. All links inside the pages already use clean addresses.
 - Images the pages use live in `assets/img/`, so pages load fast and browsers cache them. Keep that folder with the pages.
-- `assets/canvas/` holds the 3D facet data for each Living Canvas portrait (loaded only when a portrait is chosen).
-- `assets/js/` holds the home hero core animation (`hero-core.js`), the Arts & Design banner script (`canvas-banner.js`), The Living Canvas script (`living-canvas.js`, used by the future app) and the open-source Three.js library (MIT license) it uses for 3D graphics; nothing loads from other websites.
+- `assets/canvas/p1.json` holds the 3D facet data for the Living Canvas™ portrait in the Arts & Design banner.
+- `assets/js/` holds the home hero core animation (`hero-core.js`), the Arts & Design banner script (`canvas-banner.js`) and the open-source Three.js library (MIT license) it uses for 3D graphics; nothing loads from other websites.
 - `assets/logo-franklin-hub-smart-center.png` is the official Franklin HUB SMART Center logo (F mark with the purple square, FRANKLIN HUB / SMART CENTER), used in the header and in Google's organization data; the browser and phone icons use the official F icon. `assets/hero-globe-artwork.png` is kept for future edits.
 - GeoHUB links to the live NWGS Grid™ tool instead of copying its data, so there is nothing to refresh by hand.
 - Program card artwork, portraits, and all other page images are in `assets/img/`.
